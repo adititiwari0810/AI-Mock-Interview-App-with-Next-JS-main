@@ -110,7 +110,7 @@ const RecordAnswerSection = ({
   if (error) return <p>Web Speech API is not available in this browser 🤷‍</p>;
   return (
     <div className="flex justify-cente items-center flex-col">
-      <div className="flex flex-col my-20 justify-center items-center bg-black rounded-lg p-5">
+      <div className="flex flex-col my-20 justify-center items-center bg-black rounded-lg p-1">
         <Image
           src={"/webcam.png"}
           width={200}
@@ -119,10 +119,10 @@ const RecordAnswerSection = ({
           alt="webcam"
           priority
         />
-        {/* <Webcam
+        { <Webcam
           style={{ height: 300, width: "100%", zIndex: 10 }}
           mirrored={true}
-        /> */}
+        /> } 
       </div>
       <Button
         disabled={loading}
